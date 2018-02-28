@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow down@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-145.000000, -335.000000)">
+        <g id="Header" transform="translate(-1.000000, 0.000000)" fill="#000000" stroke="#FFFFFF">
+            <g id="View-work-buttons" transform="translate(48.000000, 336.000000)">
+                <path d="M110.666934,10.2967352 L97.5458173,10.2967352 L97.5458173,7.69675963 L110.610869,7.69675963 L106.687239,3.77312956 L108.525716,1.934652 L115.596784,9.00571981 L115.576317,9.02618675 L115.595377,9.04524696 L108.524309,16.1163148 L106.685832,14.2778372 L110.666934,10.2967352 Z" id="Arrow-down" transform="translate(106.571301, 9.025483) rotate(-270.000000) translate(-106.571301, -9.025483) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,100 @@
+.main-nav {
+    z-index: 5;
+    position: relative;
+    .main-nav-list {
+        margin: 0;
+        padding: 2rem 0;
+        .main-list-item {
+            display: inline-block;
+            list-style: none;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 0.1333rem;
+            margin-right: 2.5rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            @media (max-width: 360px) {
+                margin-right: 2rem;
+            }
+
+            .list-item-link {
+                display: block;
+                @include linkstyle;
+                color: $medium-gray;
+                text-align: center;
+            }
+            &:hover {
+                .list-item-link {
+                    color: $body-copy-color;
+                }
+            }
+            &.active {
+                border-bottom: 3px solid $body-copy-color;
+                .list-item-link {
+                    color: $body-copy-color;
+                    font-weight: $roboto-black;
+                }
+            }
+        }
+    }
+}
+
+.case-navigation {
+    border-bottom: 1px solid lighten($soft-gray, 12%);
+    margin-bottom: 3.3rem;
+    background-color: white;
+    .case-navigation-inner {
+        display: flex;
+        justify-content: space-between;
+        .case-navigation-link {
+            display: block;
+            padding: 1.4rem 0 1.35rem;
+            @include linkstyle;
+            .navigation-link-icon {
+                vertical-align: -2px;
+                @media (min-width: $size-switch) {
+                    vertical-align: -1px;
+                }
+                &.home {
+                    margin-right: 0.3rem;
+                }
+                &.next {
+                    margin-left: 0.3rem;
+                }
+            }
+        }
+        .sticky-project-title {
+            display: none;
+            @media (min-width: $tablet-portrait-size) {
+                display: block;
+                opacity: 0;
+                transform: translateY(-1rem);
+                font-family: "Roboto", sans-serif;
+                padding: 1.1rem 0;
+                letter-spacing: 0;
+                text-transform: none;
+                color: $medium-gray;
+                font-size: $h5;
+                transition: all ease-in-out 200ms;
+            }
+        }
+    }
+}
+
+body.sticky {
+    .case-header {
+        margin-bottom: calc(4.15rem + 3.3rem);
+    }
+    .case-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        z-index: 10;
+        .sticky-project-title {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

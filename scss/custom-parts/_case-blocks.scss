@@ -1,0 +1,81 @@
+.case-block {
+    border-bottom: 1px solid lighten($soft-gray, 12%);
+    .case-inner {
+        display: flex;
+        .case-block-left {
+            max-width: 60%;
+            flex: 0 0 60%;
+            min-height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            @media (min-width: $tablet-portrait-size) {
+                max-width: 50%;
+                flex: 0 0 50%;
+                min-height: 400px;
+            }
+            @media (min-width: $tablet-landscape-size) {
+                max-width: 40%;
+                flex: 0 0 40%;
+                min-height: 475px;
+            }
+
+            .case-block-title {
+                margin-top: 0;
+                margin-bottom: 0.5em;
+                font-weight: $roboto-medium;
+            }
+            .case-description {
+                font-family: "Lora";
+                margin-bottom: 3rem;
+                line-height: 1.43;
+                @media (min-width: $desktop-size) {
+                    padding-right: 2rem;
+                }
+            }
+            .button-default {
+                margin: 0;
+                .button-icon {
+                    vertical-align: -2px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .case-block-right {
+            flex: 1;
+            position: relative;
+            .case-image {
+                display: block;
+                position: absolute;
+
+                width: auto;
+                height: calc(100% - 1rem);
+
+                bottom: 0;
+                top: 0;
+                left: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                padding-top: 1rem;
+
+                &.case-1 {
+                    left: 2rem;
+                    margin: 0;
+                    padding: 0;
+                    top: auto;
+                    transform: none;
+                    height: calc(100% - 3rem);
+                }
+                &.case-2 {
+                    @media (min-width: $tablet-portrait-size) {
+                        padding: 2.5rem 0;
+                    }
+                }
+                &.case-3 {
+
+                }
+            }
+        }
+    }
+}

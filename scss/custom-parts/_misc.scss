@@ -1,0 +1,39 @@
+.small-quote {
+    padding-left: 0.4em;
+    margin-bottom: 3rem;
+    border-width: 1px;
+    font-size: $h6;
+}
+
+.large-quote {
+    border: none;
+    padding: 0;
+    font-size: 1.11em;
+    font-style: italic;
+    max-width: 32rem;
+    display: block;
+    margin: 3.2rem auto;
+}
+
+.hug-top {
+    margin-top: 0;
+}
+
+.no-padding-dt {
+    @media (min-width: $desktop-size) {
+        padding: 0;
+    }
+}
+
+.img-responsive {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.x-padding-lr {
+    @media (min-width: $tablet-portrait-size) {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
