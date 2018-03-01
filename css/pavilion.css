@@ -2006,8 +2006,10 @@ body {
   background-position: center center; }
   .home-header .home-header-mid .header-title {
     padding: 3.6rem 0 3.9rem;
+    margin-bottom: 3rem;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    font-family: "Playfair Display"; }
     .home-header .home-header-mid .header-title:after {
       content: '';
       display: block;
@@ -2032,7 +2034,8 @@ body {
     padding-right: 0;
     margin-bottom: 3rem;
     background: none;
-    color: #000; }
+    color: #000;
+    display: none; }
     .home-header .home-header-mid .home-header-button .button-icon {
       vertical-align: -5px;
       margin-left: 2px; }
@@ -2044,7 +2047,8 @@ body {
   .case-header .case-header-mid {
     margin-bottom: 4rem; }
     .case-header .case-header-mid .header-title {
-      margin: 1em 0 0.25em; }
+      margin: 1em 0 0.25em;
+      font-family: "Playfair Display"; }
       @media (min-width: 768px) {
         .case-header .case-header-mid .header-title {
           margin: 0.2em 0 0.25em; } }
