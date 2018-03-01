@@ -2296,7 +2296,8 @@ body.sticky .case-navigation {
     margin-top: 8rem;
     margin-bottom: 2rem; }
   .main-footer .footer-title {
-    margin-bottom: 1.3em; }
+    margin-bottom: 1.3em;
+    font-family: "Playfair Display"; }
 
 .case-block {
   border-bottom: 1px solid #ebebeb; }
